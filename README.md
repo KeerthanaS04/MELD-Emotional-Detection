@@ -37,8 +37,7 @@
 - **Episode is negatively correlated** with several features, including Sr No., Dialogue_ID, and Season, highlighting some inverse structuring in how the data is distributed.
 
 
-
-<img width="506" alt="image" src="https://github.com/user-attachments/assets/5e7f239f-7933-4eab-ab7c-185eddf61fe7" />
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/5e7f239f-7933-4eab-ab7c-185eddf61fe7" />
 - **Sr No.** shows an even spread, suggesting uniform sampling across the dataset.
 - **Utterance (text)** values are all unique or nearly unique, indicated by the flat, low-height histogram. These are specific spoken lines from the dialogues.
 - **Speaker** distribution reveals that a few characters dominate the dialogue—such as "Chandler" and "The woman", while others like "Ross" and "Phoebe" appear less frequently.
