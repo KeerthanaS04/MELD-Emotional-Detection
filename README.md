@@ -27,3 +27,11 @@
 - **Class Imbalance**: Strong, especially in emotion labels
 - **Season/Episode Coverage**: Focused around S4–S5, specific episodes
 - **Dialogue Structure**: Fewer utterances toward the end of dialogues
+
+
+![image](https://github.com/user-attachments/assets/3339d475-ff79-40c4-89d8-cd5ee07ea6d9)
+- **Sr No. and Dialogue_ID** are **strongly positively correlated (0.97)**, which makes sense as dialogue IDs likely increase sequentially with row numbers.
+- **Utterance_ID** has **very low or near-zero correlation** with most other variables, suggesting that the number of utterances per dialogue varies and is not tied to order, season, or episode.
+- **Season and Episode** show a **strong negative correlation (-0.78)**, indicating that higher seasons tend to contain lower episode numbers in this subset, or vice versa—this could be due to selective episode sampling in the test set.
+- **Sr No./Dialogue_ID and Season** show **moderate positive correlations (~0.32-0.34)**, meaning rows and dialogues are somewhat aligned with season progression.
+- **Episode is negatively correlated** with several features, including Sr No., Dialogue_ID, and Season, highlighting some inverse structuring in how the data is distributed.
