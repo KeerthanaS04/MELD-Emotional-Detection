@@ -1,7 +1,7 @@
 # MELD-Emotional-Detection
 
 ![image](https://github.com/user-attachments/assets/b1bba304-7ebb-4531-a81a-0250847867a7)
-- The emotion label imbalance (especially dominance of neutral, joy) should be addressed during training — through class weighting, sampling, or loss adjustments.
+- The **emotion label imbalance** (especially dominance of neutral, joy) should be addressed during training — through class weighting, sampling, or loss adjustments.
 - Utterances are diverse and speaker distribution is skewed (some characters dominate).
 - Time-based and meta columns (like Episode, StartTime) can be dropped unless used for advanced modeling.
 - Useful for understanding the context depth available in dialogue threads (Dialogue_ID, Utterance_ID).
@@ -21,3 +21,9 @@
 - **Utterance_ID is relatively independent**, which is good — modeling each utterance without strong bias from ordering is possible.
 - There are **no redundant features** with perfect correlation (other than Sr. No. vs Dialogue_ID), so dimensionality reduction is optional.
 
+![image](https://github.com/user-attachments/assets/8e970221-6b29-4482-8d23-bc1e58cbfeb6)
+- **Dominant Speakers**: Joey, Chandler, Ross
+- **Dominant Emotion/Sentiment**: Neutral (emotion & sentiment)
+- **Class Imbalance**: Strong, especially in emotion labels
+- **Season/Episode Coverage**: Focused around S4–S5, specific episodes
+- **Dialogue Structure**: Fewer utterances toward the end of dialogues
