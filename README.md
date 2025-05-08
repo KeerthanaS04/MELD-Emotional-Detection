@@ -30,6 +30,7 @@
 
 
 ![image](https://github.com/user-attachments/assets/3339d475-ff79-40c4-89d8-cd5ee07ea6d9)
+
 - **Sr No. and Dialogue_ID** are **strongly positively correlated (0.97)**, which makes sense as dialogue IDs likely increase sequentially with row numbers.
 - **Utterance_ID** has **very low or near-zero correlation** with most other variables, suggesting that the number of utterances per dialogue varies and is not tied to order, season, or episode.
 - **Season and Episode** show a **strong negative correlation (-0.78)**, indicating that higher seasons tend to contain lower episode numbers in this subset, or vice versa—this could be due to selective episode sampling in the test set.
@@ -38,6 +39,7 @@
 
 
 <img width="412" alt="image" src="https://github.com/user-attachments/assets/5e7f239f-7933-4eab-ab7c-185eddf61fe7" />
+
 - **Sr No.** shows an even spread, suggesting uniform sampling across the dataset.
 - **Utterance (text)** values are all unique or nearly unique, indicated by the flat, low-height histogram. These are specific spoken lines from the dialogues.
 - **Speaker** distribution reveals that a few characters dominate the dialogue—such as "Chandler" and "The woman", while others like "Ross" and "Phoebe" appear less frequently.
