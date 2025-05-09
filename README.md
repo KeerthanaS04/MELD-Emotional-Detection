@@ -1,4 +1,17 @@
-# MELD-Emotional-Detection
+# Multimodal Sentimental Analysis - Keerthana S
+
+## Motivation - Why did you pick this topic?
+I chose the topic of Multimodal Sentiment and Emotion Analysis using the MELD (Multimodal EmotionLines Dataset) because understanding human emotions across multiple modalities—such as speech, text, and visual cues—is crucial for developing emotionally intelligent AI systems. MELD is particularly compelling because it is built on dialogues from the popular TV series Friends, which is rich in expressive interactions, diverse emotional contexts, and realistic conversational flow. This makes it an ideal benchmark for studying real-life emotions and sentiment in a natural, engaging setting. By analyzing data from Friends, the project connects technical research with a culturally relevant and widely understood reference point. Furthermore, building models that can interpret such complex human emotions accurately has immense potential in applications like mental health support, conversational agents, and personalized user experiences.
+
+
+## How does it connect with past and current work done in Multimodal learning (a short (recent) historical perspective)?
+Multimodal learning has evolved rapidly over the past decade, driven by the growing availability of data that combines text, audio, and visual modalities. Early work focused on unimodal sentiment analysis using text (e.g., Twitter sentiment classifiers), but researchers soon recognized that real human communication includes facial expressions, voice tone, and context. Datasets like IEMOCAP and CMU-MOSEI laid the foundation for integrating these modalities. The introduction of MELD, derived from the Friends TV series, marked a significant advancement by providing rich, multi-speaker, context-aware dialogues with aligned modalities. Recent transformer-based architectures such as Multimodal Transformers, MMT, and FLAVA have further enhanced the ability to fuse diverse inputs effectively. Our work builds on these advances by applying and evaluating such models on MELD, bridging the gap between controlled academic datasets and real-world conversational dynamics.
+
+## Learning from This Work
+Working on this project has provided deep insights into the complexities and advantages of multimodal learning. One major takeaway is that incorporating multiple modalities—text, audio, and visual—significantly improves the ability to understand human emotions and sentiments in conversations, especially in real-world settings like TV dialogues. By exploring the MELD dataset, derived from the Friends series, I gained hands-on experience with preprocessing heterogeneous data, aligning modalities, and designing models that can capture context across turns and speakers. I also learned that challenges like speaker dependency, sarcasm, and ambiguous emotion expression make real-life emotion recognition much harder than isolated text classification. Furthermore, training models revealed the importance of balancing model complexity with overfitting risk, and I developed skills in evaluating model performance beyond accuracy—using confusion matrices, loss curves, and validation metrics to understand where models struggle. Overall, this work strengthened both my technical proficiency in multimodal machine learning and my appreciation for the nuances of human communication.
+
+
+
 
 ![image](https://github.com/user-attachments/assets/b1bba304-7ebb-4531-a81a-0250847867a7)
 - The **emotion label imbalance** (especially dominance of neutral, joy) should be addressed during training — through class weighting, sampling, or loss adjustments.
@@ -63,3 +76,17 @@
 
 **3. Negative Correlations**:
     - **Sr No. and Season (-0.83), and Dialogue_ID and Season (-0.84)**: This could suggest that the data may be ordered such that earlier dialogue IDs and serial numbers are associated with later seasons—possibly due to sorting strategy used during dataset creation.
+
+
+
+
+## What Surprised me?
+One of the most surprising aspects of this project was how significantly context and modality influenced emotion recognition accuracy. Initially, I expected that textual information alone would be sufficient for most emotion predictions. However, as I delved deeper, I realized that many emotions expressed in dialogues—especially from the Friends series where sarcasm, humor, and tone play a major role—were nearly impossible to detect accurately from text alone. For instance, the same sentence could express different emotions depending on the speaker’s tone or facial expression. Additionally, I was surprised by how imbalanced the datasets were—certain emotions like "neutral" or "joy" dominated, while others like "disgust" or "fear" were rare, making it harder for the model to learn them well. Lastly, I found it intriguing that even state-of-the-art models like BERT could overfit quickly on small, unbalanced emotion datasets, which highlighted the importance of proper regularization, validation, and careful model selection in emotion recognition tasks.
+
+## What can be the scope for the improvement?
+While this project demonstrates the potential of using transformer-based models like BERT for textual emotion classification in dialogue, there is significant scope for enhancement. Firstly, incorporating multimodal data—such as audio tone, facial expressions, and speaker gestures—would drastically improve emotion recognition accuracy, especially in context-rich conversations like those in Friends. Future work could integrate modalities from the MELD dataset beyond text (like audio and video), enabling more nuanced understanding. Secondly, data augmentation techniques could help address class imbalance, particularly for underrepresented emotions like "disgust" and "fear." Model-wise, experimenting with multitask learning or hierarchical models (that consider speaker turns and dialogue context) may better capture dependencies across utterances. Additionally, applying domain adaptation or few-shot learning approaches could help the model generalize better to new dialogue styles or unseen domains. Finally, enhancing real-time performance and interpretability—using tools like LIME or SHAP—would make such systems more robust and useful in real-world applications like mental health analysis, customer service, or virtual agents.
+
+
+## References
+https://affective-meld.github.io/
+https://arxiv.org/pdf/1810.02508.pdf
